@@ -1,0 +1,40 @@
+.conbar {
+    /* Adjust positioning as needed, e.g., fixed at the bottom */
+    position: fixed;
+    top: 50%;
+    right: 20px; /* Adjust distance from the right edge */
+    transform: translateY(-50%); /* Vertically center */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.conbar-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    gap: 15px; /* Space between icons */
+    align-items: center;
+}
+
+.conbar-content li {
+    display: inline-block; /* Arrange list items horizontally */
+}
+
+.conbar-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Size of the circular icon */
+    height: 50px;
+    border-radius: 50%; /* Make it circular */
+    background-color: #333; /* Dark background color, adjust as needed */
+    color: white; /* Icon color */
+    font-size: 24px; /* Size of the icon */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.conbar-content a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+}
